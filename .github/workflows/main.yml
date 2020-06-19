@@ -33,3 +33,4 @@ jobs:
         echo test, and deploy your project.
         pwd
         ls -al
+        ./package.sh debian 64 1
