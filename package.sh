@@ -75,7 +75,7 @@ esac
 export BUILD_NAME="CuraByDagoma"
 
 ##CuraEngine github repository
-CURA_ENGINE_REPO="https://github.com/dagoma3d/CuraEngine.git"
+CURA_ENGINE_REPO="https://github.com/0r31/CuraEngine.git"
 
 ## CuraEngine version to build
 ## Four more info, please check https://github.com/daid/LegacyCura/blob/SteamEngine/package.sh
@@ -147,10 +147,8 @@ if [ $BUILD_ENGINE != "0" ]; then
 	fi
 
 	# Build CuraEngine
-	#cd CuraEngine
-	#git checkout ${CURA_ENGINE_VERSION}
-	#cd ..
 	cd CuraEngine
+	git checkout dagoma-ci
 	git pull
 	cd ..
 	make -C CuraEngine clean
