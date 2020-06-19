@@ -2,6 +2,11 @@
 
 name: Windows CI
 
+# Use bash as default shell
+defaults:
+  run:
+    shell: bash
+
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
